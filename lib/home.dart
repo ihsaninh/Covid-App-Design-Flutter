@@ -262,28 +262,30 @@ class Home extends StatelessWidget {
                       'assets/images/awewe_sehat.svg',
                       height: 130,
                     ),
-                    Column(children: <Widget>[
-                      Text(
-                        'Do your own test!',
-                        style: TextStyle(
-                          fontFamily: 'Nunito Sans',
-                          fontWeight: FontWeight.bold,
-                          color: Colors.white,
-                          fontSize: 20
-                        ),
-                      ),
-                      Padding(
-                        padding: const EdgeInsets.only(left: 14.0),
-                        child: Text(
-                          'Follow the instructions to\ndo your own test.',
+                    Column(
+                      children: <Widget>[
+                        Text(
+                          'Do your own test!',
                           style: TextStyle(
                             fontFamily: 'Nunito Sans',
+                            fontWeight: FontWeight.bold,
                             color: Colors.white,
-                            fontSize: 16
+                            fontSize: 20
                           ),
                         ),
-                      ),
-                    ],)
+                        Padding(
+                          padding: const EdgeInsets.only(left: 14.0),
+                          child: Text(
+                            'Follow the instructions to\ndo your own test.',
+                            style: TextStyle(
+                              fontFamily: 'Nunito Sans',
+                              color: Colors.white,
+                              fontSize: 16
+                            ),
+                          ),
+                        ),
+                      ],
+                    ),
                   ],
                 )
               ),
