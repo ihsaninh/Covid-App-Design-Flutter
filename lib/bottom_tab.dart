@@ -1,6 +1,7 @@
-import 'package:covidflutter/home.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/svg.dart';
+import 'package:covidflutter/home.dart';
+import 'package:covidflutter/statistics.dart';
 
 class BottomTab extends StatefulWidget {
   @override
@@ -12,7 +13,7 @@ class _BottomTabState extends State<BottomTab> {
 
   List _pages = [
     Home(),
-    Text('tab 2'),
+    Statistics(),
     Text('tab 3'),
     Text('tab 4'),
     Text('tab 5'),

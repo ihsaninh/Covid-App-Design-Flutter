@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/svg.dart';
+import 'package:covidflutter/widgets/app_bar.dart';
 
 class Home extends StatelessWidget {
   @override
@@ -21,35 +22,14 @@ class Home extends StatelessWidget {
     );
   }
 
-  AppBar buildAppBar() {
-    return AppBar(
-      centerTitle: false,
-      elevation: 0,
-      backgroundColor: Color(0xff473F97),
-      title: IconButton(
-        onPressed: () => {},
-        icon: SvgPicture.asset('assets/images/menu.svg'),
-      ),
-      actions: <Widget>[
-        Padding(
-          padding: const EdgeInsets.only(right: 14.0),
-          child: IconButton(
-            onPressed: () => {},
-            icon: SvgPicture.asset('assets/images/bell.svg'),
-          ),
-        )
-      ],
-    );
-  }
-
   Container buildContentHeader() {
     return Container(
       padding: EdgeInsets.symmetric(vertical: 16.0, horizontal: 26.0),
       decoration: BoxDecoration(
         color: Color(0xff473F97),
         borderRadius: BorderRadius.only(
-          bottomRight: Radius.circular(50),
-          bottomLeft: Radius.circular(50)
+          bottomRight: Radius.circular(40),
+          bottomLeft: Radius.circular(40)
         )
       ),
       child: Column(
@@ -61,7 +41,7 @@ class Home extends StatelessWidget {
               style: TextStyle(
                 fontSize: 28.0,
                 color: Colors.white,
-                fontFamily: 'Nunito Sans',
+                fontFamily: 'Roboto',
                 fontWeight: FontWeight.bold
               ),
             ),
@@ -74,7 +54,7 @@ class Home extends StatelessWidget {
               style: TextStyle(
                 fontSize: 24.0,
                 color: Colors.white,
-                fontFamily: 'Nunito Sans',
+                fontFamily: 'Roboto',
                 fontWeight: FontWeight.bold
               ),
             ),
@@ -87,7 +67,7 @@ class Home extends StatelessWidget {
               style: TextStyle(
                 fontSize: 17.0,
                 color: Colors.white,
-                fontFamily: 'Nunito Sans',
+                fontFamily: 'Roboto',
               ),
             ),
           ),
@@ -112,7 +92,7 @@ class Home extends StatelessWidget {
                           child: Text(
                             'Call Now',
                             style: TextStyle(
-                              fontFamily: 'Nunito Sans',
+                              fontFamily: 'Roboto',
                               color: Colors.white,
                               fontSize: 16.0,
                               fontWeight: FontWeight.bold
@@ -138,7 +118,7 @@ class Home extends StatelessWidget {
                         child: Text(
                           'Send SMS',
                           style: TextStyle(
-                            fontFamily: 'Nunito Sans',
+                            fontFamily: 'Roboto',
                             color: Colors.white,
                             fontSize: 16.0,
                             fontWeight: FontWeight.bold
@@ -187,7 +167,7 @@ class Home extends StatelessWidget {
                           'Avoid close contact',
                           textAlign: TextAlign.center,
                           style: TextStyle(
-                            fontFamily: 'Nunito Sans',
+                            fontFamily: 'Roboto',
                             fontWeight: FontWeight.bold,
                             fontSize: 16.0
                           ),
@@ -207,7 +187,7 @@ class Home extends StatelessWidget {
                           'Clean your\nhands often',
                           textAlign: TextAlign.center,
                           style: TextStyle(
-                            fontFamily: 'Nunito Sans',
+                            fontFamily: 'Roboto',
                             fontWeight: FontWeight.bold,
                             fontSize: 16.0
                           ),
@@ -227,7 +207,7 @@ class Home extends StatelessWidget {
                           'Wear a\nfacemask',
                           textAlign: TextAlign.center,
                           style: TextStyle(
-                            fontFamily: 'Nunito Sans',
+                            fontFamily: 'Roboto',
                             fontWeight: FontWeight.bold,
                             fontSize: 16.0
                           ),
@@ -267,7 +247,7 @@ class Home extends StatelessWidget {
                         Text(
                           'Do your own test!',
                           style: TextStyle(
-                            fontFamily: 'Nunito Sans',
+                            fontFamily: 'Roboto',
                             fontWeight: FontWeight.bold,
                             color: Colors.white,
                             fontSize: 20
@@ -278,7 +258,7 @@ class Home extends StatelessWidget {
                           child: Text(
                             'Follow the instructions to\ndo your own test.',
                             style: TextStyle(
-                              fontFamily: 'Nunito Sans',
+                              fontFamily: 'Roboto',
                               color: Colors.white,
                               fontSize: 16
                             ),
